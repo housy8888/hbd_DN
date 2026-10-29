@@ -21,7 +21,7 @@ export type QuizQuestion = {
 export const meSrc = '/characters/me.png'
 export const danielSrc = '/characters/daniel.png'
 export const danielCutoutSrc = '/characters/daniel-cutout.png'
-export const bullSrc = '/characters/bull.svg'
+export const bullSrc = '/characters/bull-funny.png'
 
 export const portraitSrc: Record<PortraitId, string> = {
   me: meSrc,
@@ -40,7 +40,7 @@ export const stage1Pages: NarrativePage[] = [
         { text: ' through a mutual friend at parkrun.' },
       ],
       [{ text: 'Chill Guy at First Sight?' }],
-      [{ text: 'Hell Nah' }],
+      [{ text: 'Hell Nah...' }],
       [
         {
           text: "Well, I guess it doesn't have anything to do with him. It's because I learned about 5+ red flags from the mutual friend in less than 2 minutes after he was introduced to me.",
@@ -55,7 +55,7 @@ export const stage1Pages: NarrativePage[] = [
     lines: [
       [
         {
-          text: 'All the red flags were introduced upon the formula: Daniel + hates + blah. As the mutual friend was telling me:',
+          text: 'All the red flags were introduced upon the formula: [Daniel + hates + blah]. As the mutual friend was telling me:',
         },
       ],
       [{ text: '"Daniel hates photos."' }],
@@ -72,15 +72,13 @@ export const stage1Pages: NarrativePage[] = [
     lines: [
       [
         {
-          text: 'Oh man, do I have to learn hurdling through all the red lines set by this guy if I wanna be friends with him?',
+          text: 'Do I have to learn how to hurdle through all the red lines if I want to be friends with this guy?',
         },
       ],
       [
         { text: 'If the ' },
         { portrait: 'daniel' },
-        { text: ' I know now is a ' },
-        { portrait: 'daniel' },
-        { text: ", back then he's gotta be a bull " },
+        { text: " I know now is a COW, back then he's gotta be a bull " },
         { portrait: 'bull' },
         { text: '.' },
       ],
