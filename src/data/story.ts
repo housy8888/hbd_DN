@@ -20,6 +20,7 @@ export type QuizQuestion = {
 
 export const meSrc = '/characters/me.png'
 export const danielSrc = '/characters/daniel.png'
+export const danielCutoutSrc = '/characters/daniel-cutout.png'
 export const bullSrc = '/characters/bull.svg'
 
 export const portraitSrc: Record<PortraitId, string> = {
@@ -36,9 +37,7 @@ export const stage1Pages: NarrativePage[] = [
       [
         { text: 'I met ' },
         { portrait: 'daniel' },
-        {
-          text: ' through a mutual friend at parkrun. First impression wasn\'t actually that good — at least not after learning 5+ red flags about this person less than 5 minutes after being introduced.',
-        },
+        { text: ' through a mutual friend at parkrun.' },
       ],
     ],
   },

@@ -18,7 +18,7 @@ export function ClosingScene({ pages }: Props) {
           <br />
           DANIEL <span className="heart">&lt;3</span>
         </h1>
-        <p className="finale-sub">from Shiyao</p>
+        <p className="finale-sub">from Your Absolute Best Luca</p>
       </section>
     )
   }

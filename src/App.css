@@ -348,9 +348,16 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0.2rem;
-  border-radius: 50%;
-  background: #fff;
-  box-shadow: 0 0 0 2px rgba(60, 42, 31, 0.12);
+  width: 2.2em;
+  height: 1.45em;
+  border-radius: 0;
+  background: transparent;
+  object-fit: contain;
+  box-shadow: none;
+}
+
+.inline-portrait.portrait-cutout {
+  object-fit: contain;
 }
 
 .caret {

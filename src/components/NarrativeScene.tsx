@@ -30,7 +30,9 @@ export function NarrativeScene({ pages, onComplete, continueLabel = 'Continue' }
           <div className="speaker-row">
             <Portrait id={page.speaker} size="lg" className="speaker-portrait" />
             <div className="speaker-meta">
-              <span className="speaker-name">{page.speaker === 'me' ? 'Shiyao' : 'Daniel'}</span>
+              <span className="speaker-name">
+                {page.speaker === 'me' ? 'Your Absolute Best Luca' : 'Daniel'}
+              </span>
             </div>
           </div>
         )}

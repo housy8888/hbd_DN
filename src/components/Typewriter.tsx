@@ -105,6 +105,7 @@ export function Typewriter({ lines, speed = 22, onComplete, className = '' }: Pr
           key={`p-${key++}`}
           id={token.id}
           size="sm"
+          variant={token.id === 'daniel' ? 'cutout' : 'default'}
           className="inline-portrait"
           alt={token.alt}
         />,
