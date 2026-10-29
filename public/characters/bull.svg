@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 120" role="img" aria-label="Bull">
+  <!-- frameless brown bull -->
+  <ellipse cx="78" cy="72" rx="52" ry="30" fill="#6B3F24"/>
+  <ellipse cx="78" cy="72" rx="52" ry="30" fill="#8B5A2B" opacity="0.35"/>
+  <circle cx="118" cy="48" r="26" fill="#7A4A28"/>
+  <!-- horns -->
+  <path d="M98 34 C90 18 78 10 74 8 C86 18 94 28 98 34Z" fill="#D4B896"/>
+  <path d="M138 34 C146 18 154 12 158 10 C148 20 142 28 138 34Z" fill="#D4B896"/>
+  <path d="M98 34 C90 18 78 10 74 8 C86 18 94 28 98 34Z" fill="#C4A574" opacity="0.5"/>
+  <path d="M138 34 C146 18 154 12 158 10 C148 20 142 28 138 34Z" fill="#C4A574" opacity="0.5"/>
+  <!-- ears -->
+  <ellipse cx="100" cy="42" rx="8" ry="12" fill="#5C3317" transform="rotate(-25 100 42)"/>
+  <ellipse cx="136" cy="42" rx="8" ry="12" fill="#5C3317" transform="rotate(25 136 42)"/>
+  <!-- snout -->
+  <ellipse cx="128" cy="58" rx="14" ry="10" fill="#A67C52"/>
+  <ellipse cx="123" cy="58" rx="2.5" ry="3" fill="#3D2415"/>
+  <ellipse cx="133" cy="58" rx="2.5" ry="3" fill="#3D2415"/>
+  <!-- eye -->
+  <circle cx="112" cy="44" r="4" fill="#1A1008"/>
+  <circle cx="113.5" cy="42.5" r="1.4" fill="#F5E6D3"/>
+  <!-- legs -->
+  <rect x="48" y="90" width="10" height="22" rx="4" fill="#5C3317"/>
+  <rect x="68" y="92" width="10" height="22" rx="4" fill="#5C3317"/>
+  <rect x="88" y="92" width="10" height="22" rx="4" fill="#5C3317"/>
+  <rect x="106" y="88" width="10" height="22" rx="4" fill="#5C3317"/>
+  <!-- hooves -->
+  <ellipse cx="53" cy="112" rx="6" ry="3" fill="#2A1810"/>
+  <ellipse cx="73" cy="114" rx="6" ry="3" fill="#2A1810"/>
+  <ellipse cx="93" cy="114" rx="6" ry="3" fill="#2A1810"/>
+  <ellipse cx="111" cy="110" rx="6" ry="3" fill="#2A1810"/>
+  <!-- tail -->
+  <path d="M28 68 Q12 50 18 38" stroke="#6B3F24" stroke-width="5" fill="none" stroke-linecap="round"/>
+  <circle cx="18" cy="36" r="5" fill="#4A2C18"/>
+</svg>

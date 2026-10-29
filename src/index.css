@@ -1,0 +1,4 @@
+/* base reset lives mostly in App.css; keep file for vite entry */
+html {
+  scroll-behavior: smooth;
+}
