@@ -64,8 +64,8 @@ function MemoryLayout({
   page: NarrativePage
   onReady: () => void
 }) {
-  const cards = page.lines.slice(0, 4)
-  const footer = page.lines.slice(4)
+  const cards = page.lines.slice(0, 5)
+  const footer = page.lines.slice(5)
 
   return (
     <div className="memory-grid">
@@ -73,7 +73,7 @@ function MemoryLayout({
         {cards.map((line, i) => {
           const caption = line.find((s) => 'text' in s && !s.text.startsWith('['))
           return (
-            <figure key={i} className="memory-card">
+            <figure key={i} className={`memory-card ${i === cards.length - 1 ? 'memory-card-wide' : ''}`}>
               <div className="missing-image">[image not available]</div>
               <figcaption>{caption && 'text' in caption ? caption.text : ''}</figcaption>
             </figure>

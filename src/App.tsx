@@ -18,7 +18,7 @@ const stageLabels = [
   'Begin',
   'Origin story',
   'Bull dodge',
-  'Softening',
+  'Passing',
   'Truth or False',
   'Finale',
 ]

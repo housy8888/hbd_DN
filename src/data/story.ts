@@ -92,7 +92,7 @@ export const stage3Pages: NarrativePage[] = [
     speaker: 'me',
     lines: [
       [
-        { text: 'Because of all the pre-defined rules of staying with ' },
+        { text: 'Because of all the pre-defined "rules" of getting along with ' },
         { portrait: 'daniel' },
         {
           text: ", I couldn't tell apart the jokes and the reals. But for a sequence of events, I gradually realized that ",
@@ -100,7 +100,7 @@ export const stage3Pages: NarrativePage[] = [
         { portrait: 'daniel' },
         { text: "'s barks are worse than " },
         { portrait: 'daniel' },
-        { text: "'s bites." },
+        { text: "'s bites. He is actually a very nice person." },
       ],
     ],
   },
@@ -123,8 +123,14 @@ export const stage3Pages: NarrativePage[] = [
         { text: 'taking care of all my belongings during summer' },
       ],
       [
+        { text: '[image not available]' },
         {
-          text: 'Because of a data erase that happened to my iPhone in August 2026, I lost all the pictures. 30,000+ photos gone in a snap lol. I said to myself that maybe something was destined to be forgotten. Yet, something else was not — and my brain might even be more nonvolatile than RAM lol.',
+          text: 'driving me to Sacramento to raft; giving the bed to me and slept on floor',
+        },
+      ],
+      [
+        {
+          text: 'Because of a data erase that happened to my iPhone in August 2026, I lost all the pictures. 30,000+ photos gone in a snap. I said to myself that maybe something was destined to be forgotten. Yet, something else was not — and my brain might even be more nonvolatile than RAM lol.',
         },
       ],
     ],
