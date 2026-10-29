@@ -339,8 +339,8 @@ button {
 .typewriter-body {
   margin: 0;
   font-family: var(--font-display);
-  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
-  line-height: 1.65;
+  font-size: 40px;
+  line-height: 2;
   font-weight: 450;
 }
 
@@ -348,8 +348,8 @@ button {
   display: inline-block;
   vertical-align: middle;
   margin: 0 0.2rem;
-  width: 2.2em;
-  height: 1.45em;
+  width: 4.5em;
+  height: 2.8em;
   border-radius: 0;
   background: transparent;
   object-fit: contain;
@@ -753,6 +753,15 @@ button {
 }
 
 @media (max-width: 720px) {
+  .typewriter-body {
+    font-size: 32px;
+  }
+
+  .inline-portrait {
+    width: 4em;
+    height: 2.5em;
+  }
+
   .memory-cards {
     grid-template-columns: 1fr;
   }
