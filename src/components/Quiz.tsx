@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useMemo, useState } from 'react'
 import type { QuizQuestion } from '../data/story'
 import { Portrait } from './Portrait'
 import { Typewriter } from './Typewriter'
@@ -14,6 +14,7 @@ export function Quiz({ questions, onComplete }: Props) {
   const [ready, setReady] = useState(false)
   const q = questions[index]
   const answered = picked !== null
+  const promptLines = useMemo(() => [q.prompt], [q.prompt])
 
   const choose = (i: number) => {
     if (answered) return
@@ -34,7 +35,7 @@ export function Quiz({ questions, onComplete }: Props) {
     <section className="scene quiz-scene">
       <div className="dialogue-panel">
         <p className="quiz-kicker">Truth or False · {index + 1}/{questions.length}</p>
-        <Typewriter key={q.id} lines={[q.prompt]} onComplete={() => setReady(true)} />
+        <Typewriter key={q.id} lines={promptLines} onComplete={() => setReady(true)} />
 
         <div className="options" role="list">
           {q.options.map((opt, i) => {
