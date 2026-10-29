@@ -27,7 +27,7 @@ function App() {
   const [stage, setStage] = useState<Stage>(0)
 
   return (
-    <div className="app">
+    <div className={`app ${stage === 0 ? 'cover-app' : ''}`}>
       <Background />
 
       {stage > 0 && (
@@ -47,15 +47,16 @@ function App() {
 
       <main className="stage-root">
         {stage === 0 && (
-          <section className="scene title-scene">
-            <p className="eyebrow">a link, a story, a little game</p>
-            <h1 className="title-brand">for Daniel</h1>
-            <p className="title-sub">
-              An interactive birthday note — part narrative, part parkrun obstacle course.
-            </p>
-            <button type="button" className="btn primary large" onClick={() => setStage(1)}>
-              Open the link
+          <section className="scene cover-scene" aria-label="Daniel's birthday game">
+            <button
+              type="button"
+              className="cover-icon"
+              onClick={() => setStage(1)}
+              aria-label="Click Daniel's icon to begin"
+            >
+              <img src="/characters/daniel.png" alt="Daniel's black cow symbol" />
             </button>
+            <p className="cover-hint">click icon</p>
           </section>
         )}
 
