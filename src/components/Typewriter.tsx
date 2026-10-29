@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState, type ReactNode } from 'react'
+import { useEffect, useMemo, useRef, useState, type ReactNode } from 'react'
 import type { PortraitId, TextSegment } from '../data/story'
 import { Portrait } from './Portrait'
 
@@ -39,19 +39,21 @@ function tokenize(lines: TextSegment[][]): Token[] {
 }
 
 export function Typewriter({ lines, speed = 22, onComplete, className = '' }: Props) {
+  const tokenKey = JSON.stringify(lines)
   const tokens = useMemo(() => tokenize(lines), [lines])
   const [visible, setVisible] = useState(0)
   const [done, setDone] = useState(false)
+  const completionCalled = useRef(false)
 
   useEffect(() => {
-    setVisible(0)
-    setDone(false)
-  }, [tokens])
+    completionCalled.current = false
+  }, [tokenKey])
 
   useEffect(() => {
     if (visible >= tokens.length) {
-      if (!done) {
+      if (!done && !completionCalled.current) {
         setDone(true)
+        completionCalled.current = true
         onComplete?.()
       }
       return
@@ -72,9 +74,13 @@ export function Typewriter({ lines, speed = 22, onComplete, className = '' }: Pr
   }, [visible, tokens, speed, done, onComplete])
 
   const skip = () => {
+    if (done) return
     setVisible(tokens.length)
     setDone(true)
-    onComplete?.()
+    if (!completionCalled.current) {
+      completionCalled.current = true
+      onComplete?.()
+    }
   }
 
   const rendered: ReactNode[] = []

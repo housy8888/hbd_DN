@@ -549,13 +549,15 @@ button {
 }
 
 .replay {
-  width: 84px;
-  height: 84px;
-  border-radius: 50%;
+  min-width: 84px;
+  min-height: 58px;
+  padding: 0.7rem 1.2rem;
+  border-radius: 999px;
   border: 2px solid var(--espresso);
   background: rgba(60, 42, 31, 0.08);
   color: var(--espresso);
-  font-size: 2.4rem;
+  font-size: 1.05rem;
+  font-weight: 650;
   cursor: pointer;
   animation: pulse 1.4s ease-in-out infinite;
 }

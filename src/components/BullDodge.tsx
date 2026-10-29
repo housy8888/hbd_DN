@@ -34,8 +34,13 @@ export function BullDodge({ onWin }: Props) {
   const raf = useRef<number | null>(null)
   const last = useRef(0)
 
-  playerYRef.current = playerY
-  bullsRef.current = bulls
+  useEffect(() => {
+    playerYRef.current = playerY
+  }, [playerY])
+
+  useEffect(() => {
+    bullsRef.current = bulls
+  }, [bulls])
 
   const reset = useCallback(() => {
     setPlayerY(GAME_H / 2 - PLAYER_SIZE / 2)
@@ -46,6 +51,7 @@ export function BullDodge({ onWin }: Props) {
     spawnAcc.current = 0
     elapsed.current = 0
     last.current = 0
+    keys.current = { up: false, down: false }
   }, [])
 
   useEffect(() => {
@@ -193,8 +199,8 @@ export function BullDodge({ onWin }: Props) {
 
         {status === 'lost' && (
           <div className="overlay">
-            <button type="button" className="replay" onClick={reset} aria-label="Replay">
-              ↻
+            <button type="button" className="replay" onClick={reset} aria-label="Restart dodge game">
+              ↻ <span>Restart dodge</span>
             </button>
             <p>Hit by a bull — try again</p>
           </div>
