@@ -39,6 +39,13 @@ export const stage1Pages: NarrativePage[] = [
         { portrait: 'daniel' },
         { text: ' through a mutual friend at parkrun.' },
       ],
+      [{ text: 'Chill Guy at First Sight?' }],
+      [{ text: 'Hell Nah' }],
+      [
+        {
+          text: "Well, I guess it doesn't have anything to do with him. It's because I learned about 5+ red flags from the mutual friend in less than 2 minutes after he was introduced to me.",
+        },
+      ],
     ],
   },
   {
